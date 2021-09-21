@@ -219,13 +219,13 @@
             <div class="container ">
                 <a class="navbar-brand d-none d-sm-block mr-3 flex-shrink-0 tab-logo" href="{{route('home')}}"
                    style="min-width: 7rem;">
-                    <img width="250" height="60" style="height: 60px!important;"
+                    <img width="60" height="60" style="height: 60px!important;"
                          src="{{asset("storage/app/public/company/$company_web_logo")}}"
                          onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
                          alt="{{$company_name}}"/>
                 </a>
                 <a class="navbar-brand d-sm-none mr-2" href="{{route('home')}}">
-                    <img width="100" height="60" style="height: 60px!important;"
+                    <img width="60" height="60" style="height: 60px!important;"
                          src="{{asset("storage/app/public/company/$company_mobile_logo")}}"
                          onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
                          alt="{{$company_name}}"/>

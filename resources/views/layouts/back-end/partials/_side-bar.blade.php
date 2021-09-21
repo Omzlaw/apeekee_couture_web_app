@@ -6,12 +6,12 @@
         class="js-navbar-vertical-aside navbar navbar-vertical-aside navbar-vertical navbar-vertical-fixed navbar-expand-xl navbar-bordered  ">
         <div class="navbar-vertical-container">
             <div class="navbar-vertical-footer-offset pb-0">
-                <div class="navbar-brand-wrapper justify-content-between">
+                <div class="navbar-brand-wrapper justify-content-between mt-3 text-center">
                     <!-- Logo -->
 
                     @php($e_commerce_logo=\App\Model\BusinessSetting::where(['type'=>'company_web_logo'])->first()->value)
                     <a class="navbar-brand" href="{{route('admin.dashboard')}}" aria-label="Front">
-                        <img style="max-height: 38px" onerror="this.src='{{asset('public/assets/back-end/img/160x160/img1.jpg')}}'" class="navbar-brand-logo-mini for-web-logo"
+                        <img height="60" width="60"  class="rounded-circle" style="max-height: 60px" onerror="this.src='{{asset('public/assets/back-end/img/160x160/img1.jpg')}}'" class="navbar-brand-logo-mini for-web-logo"
                         src="{{asset("storage/app/public/company/$e_commerce_logo")}}" alt="Logo">
                     </a>
 
@@ -273,17 +273,17 @@
               @endif
           </li>
           <li class="nav-item {{Request::is('admin/product/list/in_house')?'active':''}}">
-              <a class="nav-link " href="{{route('admin.product.list',['in_house'])}}" title="InHouse Products">
+              <a class="nav-link " href="{{route('admin.product.list',['in_house'])}}" title="Products">
                   <span class="tio-circle nav-indicator-icon"></span>
-                  <span class="text-truncate">{{trans('messages.InHouse Products')}}</span>
+                  <span class="text-truncate">{{trans('messages.Products')}}</span>
               </a>
           </li>
-          <li class="nav-item {{Request::is('admin/product/list/seller')?'active':''}}">
+          {{-- <li class="nav-item {{Request::is('admin/product/list/seller')?'active':''}}">
             <a class="nav-link "href="{{route('admin.product.list',['seller'])}}" title="Seller Products">
                 <span class="tio-circle nav-indicator-icon"></span>
                 <span class="text-truncate">{{trans('messages.Seller Products')}}</span>
             </a>
-        </li>
+           </li> --}}
 
       </ul>
   </li>
@@ -336,7 +336,7 @@
 
 @endif
    {{--to do--}}
-   @if(\App\CPU\Helpers::module_permission_check('seller'))
+   {{-- @if(\App\CPU\Helpers::module_permission_check('seller'))
    <li class="nav-item">
        <small class="nav-subtitle" title="Layouts">    {{trans('messages.seller_section')}}</small>
            <small class="tio-more-horizontal nav-subtitle-replacer"></small>
@@ -369,7 +369,7 @@
            </ul>
        </li>
 
-       @endif
+       @endif --}}
 {{--
     @if(\App\CPU\Helpers::module_permission_check('seller'))
         <div class="sidebar-heading">

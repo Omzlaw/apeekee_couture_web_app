@@ -1,7 +1,7 @@
 <!-- Footer -->
 <style>
     .page-footer {
-        background: #333e4f;
+        background: #449BA4;
         color: white;
     }
 
@@ -59,7 +59,7 @@
     }
 
     .page-footer hr {
-        border: 0.001px solid #2d3542;
+        border: 0.001px solid #fff;
     }
     .social-media :hover{
      color:  {{$web_config['secondary_color']}} !important;
@@ -173,9 +173,9 @@
 
             <!-- Grid column -->
             <div class="col-md-3 col-lg-3 col-xl-3 mr-auto mt-3">
-                <div class="text-nowrap mb-4">
+                <div class="text-nowrap mb-4 text-center">
                     <a class="d-inline-block align-middle mt-n1 mr-3" href="{{route('home')}}">
-                        <img width="250" style="height: 60px!important;"
+                        <img class="rounded-circle" width="80" style="height: 80px!important;"
                              src="{{asset("storage/app/public/company/")}}/{{ $web_config['footer_logo']->value }}"
                              onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
                              alt="{{ $web_config['name']->value }}"/>

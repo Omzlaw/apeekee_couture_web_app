@@ -6,10 +6,10 @@
                 <!-- Logo -->
                 @php($e_commerce_logo=\App\Model\BusinessSetting::where(['type'=>'company_web_logo'])->first()->value)
                 <a class="navbar-brand" href="{{route('admin.dashboard')}}" aria-label="">
-                    <img class="navbar-brand-logo"
+                    <img class="navbar-brand-logo rounded-circle"
                          onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
                          src="{{asset("storage/app/public/company/$e_commerce_logo")}}"alt="Logo">
-                    <img class="navbar-brand-logo-mini"
+                    <img class="navbar-brand-logo-mini rounded-circle"
                          onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
                          src="{{asset("storage/app/public/company/$e_commerce_logo")}}"
                          alt="Logo">
