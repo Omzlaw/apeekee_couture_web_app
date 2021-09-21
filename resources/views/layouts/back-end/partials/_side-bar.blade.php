@@ -602,12 +602,12 @@
                                         </a>
                                     </li>
 
-                                    <li class="nav-item {{Request::is('admin/business-settings/seller-settings*')?'active':''}}">
+                                    {{-- <li class="nav-item {{Request::is('admin/business-settings/seller-settings*')?'active':''}}">
                                         <a class="nav-link " href="{{route('admin.business-settings.seller-settings.index')}}" title="change seller settings">
                                             <span class="tio-circle nav-indicator-icon"></span>
                                             <span class="text-truncate">{{trans('messages.seller_settings')}}</span>
                                         </a>
-                                    </li>
+                                    </li> --}}
 
 
                             </ul>

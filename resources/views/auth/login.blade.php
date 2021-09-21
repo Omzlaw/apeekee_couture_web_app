@@ -1,6 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
+
+<style>
+            button.btn.btn-primary {
+            background-color: #41939C;
+        }
+
+</style>
 <div class="container ">
     <div class="row justify-content-center for-margin ">
         <div class="col-md-8">
